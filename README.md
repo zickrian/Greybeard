@@ -14,11 +14,11 @@ To use Greybeard effectively, it's crucial to understand the distinction between
 
 *   **Rules (The "How"):** These are absolute behavioral constraints and guiding principles. They dictate *how* the AI should think, prioritize, and communicate. Rules are universal across all languages and frameworks. 
     *   *Example:* "Never guess. Always verify before proposing a fix." or "Prefer evidence over assumptions." 
-    *   **Greybeard is purely a collection of Rules.**
+    *   **Greybeard now includes both the Ultimate Rules (RULES.md) and a curated `skills/` directory of 24 Elite Core Skills.**
 *   **Skills (The "What"):** These are task-specific, contextual instructions. They dictate *what* steps the AI should take to accomplish a specific technical goal. 
     *   *Example:* "How to deploy this Next.js app to Vercel" or "The standard way to write a React component in this repository."
 
-**The Golden Workflow:** You combine Greybeard (your core foundation/rules) with your own project-specific Skills. This ensures the AI always acts professionally, no matter what specific task it is doing.
+**The Golden Workflow:** You inject Greybeard's `RULES.md` and copy the `skills/` directory into your agent's config folder. This creates an unshakeable, disciplined AI foundation. You can then add your own project-specific Skills on top of this.
 
 ## 🚀 Usage
 
