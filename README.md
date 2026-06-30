@@ -1,44 +1,38 @@
-# Greybeard
+# Greybeard & Antigravity Setup
+
+![Profile Picture](./assets/profile.png)
 
 **Greybeard** is a definitive, battle-tested set of core behavioral rules designed to elevate any AI coding assistant into a pragmatic, senior-level autonomous engineering agent.
 
-Rather than focusing on syntax or framework-specific knowledge, Greybeard defines the **"how"**—the decision priorities, problem-solving methodologies, and strict behavioral guardrails that prevent common AI pitfalls like over-engineering, hallucination, and unnecessary code churn.
+In my setup, I use **Google Antigravity (AGY)** as my primary AI coding assistant. This repository shares my personal setup, containing both the core rules and the specialized skills I rely on daily to maintain discipline and efficiency in my workflow. 
 
-## 🌟 Why Greybeard?
+Rather than focusing solely on syntax, Greybeard defines the **"how"**—the decision priorities, problem-solving methodologies, and strict behavioral guardrails that prevent common AI pitfalls like over-engineering, hallucination, and unnecessary code churn.
 
-Most AI coding assistants fail not because they lack knowledge, but because they lack discipline. They often rewrite working code, guess APIs instead of reading documentation, and prioritize complex, abstract solutions over simple, maintainable ones. Greybeard fixes this by acting as a strict behavioral framework that prioritizes user intent, verification, and simplicity.
+## 🌟 Why Greybeard + Antigravity?
+
+Most AI coding assistants fail not because they lack knowledge, but because they lack discipline. Greybeard fixes this by acting as a strict behavioral framework that prioritizes user intent, verification, and simplicity. When paired with the power of Antigravity, the agent becomes incredibly autonomous, smart, and precise.
 
 ## 📖 Rules vs. Skills: What's the Difference?
 
-To use Greybeard effectively, it's crucial to understand the distinction between **Rules** and **Skills** in the context of AI assistants:
+To use this setup effectively, it's crucial to understand the distinction between **Rules** and **Skills**:
 
-*   **Rules (The "How"):** These are absolute behavioral constraints and guiding principles. They dictate *how* the AI should think, prioritize, and communicate. Rules are universal across all languages and frameworks. 
-    *   *Example:* "Never guess. Always verify before proposing a fix." or "Prefer evidence over assumptions." 
-    *   **Greybeard now includes both the Ultimate Rules (RULES.md) and a curated `skills/` directory of 24 Elite Core Skills.**
-*   **Skills (The "What"):** These are task-specific, contextual instructions. They dictate *what* steps the AI should take to accomplish a specific technical goal. 
-    *   *Example:* "How to deploy this Next.js app to Vercel" or "The standard way to write a React component in this repository."
+*   **Rules (The "How"):** Absolute behavioral constraints and guiding principles. They dictate *how* the AI should think, prioritize, and communicate.
+    *   *Location:* You can find the Ultimate Rules in the `rule/` directory.
+*   **Skills (The "What"):** Task-specific, contextual instructions. They dictate *what* steps the AI should take to accomplish a specific technical goal.
+    *   *Location:* Available in the `skills/` directory.
 
-**The Golden Workflow:** You inject Greybeard's `RULES.md` and copy the `skills/` directory into your agent's config folder. This creates an unshakeable, disciplined AI foundation. You can then add your own project-specific Skills on top of this.
+## 🚀 How to Use (Cara Pakai)
 
-## 🚀 Usage
+To get the most out of your AI agent (like Antigravity), you **must** set up both the rules and the skills. 
 
-Greybeard is designed to be platform-agnostic. You can inject these rules into the system prompt or project-level configuration of your favorite AI coding tool.
+1. **Install All Skills**: Copy the entire `skills/` directory into your agent's configuration folder (for Antigravity, this is usually `~/.gemini/config/skills/` or your workspace `.agents/skills/`).
+2. **Implement the Rules (Wajib!)**: You **must** apply the rules from `rule/RULES.md` into your agent's system prompt or global instruction file (e.g., `AGENTS.md` for Antigravity). 
+   
+> **Important:** If you only install the skills without implementing the rules, the agent won't have the discipline to properly use those skills. The rules force the agent to actually execute and utilize the skills you have installed!
 
-### Cursor
-Create a `.cursorrules` file in the root of your workspace and copy the contents of `RULES.md` into it.
-
-### Windsurf
-Create a `.windsurfrules` file in the root of your workspace and copy the contents of `RULES.md` into it.
-
-### Claude Code / Google Antigravity / Custom CLI Agents
-Inject the contents of `RULES.md` directly into your agent's system prompt or global instruction file (e.g., `AGENTS.md` for Antigravity).
-
-### GitHub Copilot / ChatGPT / Claude Web
-Paste the contents of `RULES.md` into the "Custom Instructions" / "System Instructions" settings, or simply paste it at the beginning of a complex conversation to set the operational baseline.
-
-## 📜 The Rules
-
-Read the full set of rules in [RULES.md](./RULES.md).
+### Other Agents (Cursor, Windsurf, etc.)
+- **Cursor**: Create a `.cursorrules` file and copy the contents of `rule/RULES.md`.
+- **Windsurf**: Create a `.windsurfrules` file and copy the contents of `rule/RULES.md`.
 
 ## 📄 License
 
