@@ -1,6 +1,6 @@
 ---
 name: domain-driven-design
-description: "Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns."
+description: "Use when modeling a complex business domain: defining bounded contexts, aggregates, entities, value objects, domain events, ubiquitous language, or deciding on CQRS/event-sourcing/sagas. For general architecture choices use the architecture skill instead."
 risk: safe
 source: self
 tags: "[ddd, domain, bounded-context, architecture]"
@@ -38,16 +38,15 @@ Use full DDD only when at least two of these are true:
 - Integration contracts are unstable.
 - Auditability and explicit invariants are critical.
 
-### Routing map
+### Focus areas (work these phases inline — no external sub-skills required)
 
-- Strategic model and boundaries: `@ddd-strategic-design`
-- Cross-context integrations and translation: `@ddd-context-mapping`
-- Tactical code modeling: `@ddd-tactical-patterns`
-- Read/write separation: `@cqrs-implementation`
-- Event history as source of truth: `@event-sourcing-architect` and `@event-store-design`
-- Long-running workflows: `@saga-orchestration`
-- Read models: `@projection-patterns`
-- Decision log: `@architecture-decision-records`
+- **Strategic model & boundaries**: identify subdomains (core/supporting/generic), draw bounded contexts, write the ubiquitous-language glossary.
+- **Context mapping**: define integration relationships between contexts (partnership, customer/supplier, conformist, anti-corruption layer).
+- **Tactical modeling**: aggregates, entities, value objects, domain events, repository contracts.
+- **CQRS** (only if read/write loads diverge): separate command and query models with an explicit rationale.
+- **Event sourcing** (only if event history must be the source of truth): event schema + versioning, event store design, projection/read-model rebuild strategy.
+- **Sagas**: compensation matrix for long-running, multi-context workflows.
+- **Decision log**: record each non-obvious choice as an ADR — use the `architecture` skill's ADR template.
 
 If templates are needed, open `references/ddd-deliverables.md`.
 

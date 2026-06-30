@@ -1,7 +1,7 @@
 ---
 name: executing-plans
 description: "Use when you have a written implementation plan to execute in a separate session with review checkpoints"
-risk: unknown
+risk: safe
 source: community
 date_added: "2026-02-27"
 ---
@@ -47,10 +47,11 @@ Based on feedback:
 
 ### Step 5: Complete Development
 
-After all tasks complete and verified:
-- Announce: "I'm using the finishing-a-development-branch skill to complete this work."
-- **REQUIRED SUB-SKILL:** Use superpowers:finishing-a-development-branch
-- Follow that skill to verify tests, present options, execute choice
+After all tasks complete and verified, finish the branch cleanly:
+- Run the full test suite and lint/build — all must pass.
+- Re-read every modified file (per the Definition of DONE in GEMINI.md).
+- Summarize what changed and present commit/PR options to the user.
+- Do not commit, push, or merge without explicit user approval.
 
 ## When to Stop and Ask for Help
 

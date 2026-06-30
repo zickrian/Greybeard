@@ -1,6 +1,6 @@
 ---
 name: runaway-guard
-description: "Cost-safety discipline for paid AI / inference APIs: treat $-cost as a third complexity dimension alongside time and space. Forces a written per-run $-cap, per-day $-cap, max-iterations bound, concurrency limit, and a matching provider-dashboard hard cap BEFORE any call site is written."
+description: "Use when writing code that calls a paid AI/inference API, a metered cloud service, an unbounded loop of API calls, or a background/cron job that spends money. Forces a written per-run $-cap, per-day $-cap, max-iterations bound, concurrency limit, and a matching provider-dashboard hard cap BEFORE the call site is written."
 risk: safe
 source: community
 source_repo: morsechimwai/lemmaly

@@ -1,7 +1,7 @@
 ---
 name: code-refactoring-refactor-clean
-description: "You are a code refactoring expert specializing in clean code principles, SOLID design patterns, and modern software engineering best practices. Analyze and refactor the provided code to improve its quality, maintainability, and performance."
-risk: unknown
+description: "Use when refactoring or cleaning up existing working code: improving structure, readability, naming, removing duplication, applying SOLID, or reducing complexity WITHOUT changing behavior. For finding bugs use bugs-are-annoying; for craft/boundary review use uncle-bob-craft."
+risk: safe
 source: community
 date_added: "2026-02-27"
 ---

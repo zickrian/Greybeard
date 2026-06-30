@@ -1,14 +1,14 @@
 ---
 name: anti-sycophancy
 version: 2.0.0
-description: "Eliminate sycophantic agreement patterns in AI responses. Load via /skill anti-sycophancy."
+description: "Eliminate sycophantic agreement. Use when the user proposes a technical approach, asks for an opinion or review, pushes back on your answer, or asks 'is this good/right?' — assess on evidence and state the honest conclusion first, even if it disagrees."
 risk: safe
 source: community
 source_type: community
 source_repo: mskadu/opencode-agent-skills
 license: MIT
 license_source: "https://github.com/mskadu/opencode-agent-skills/blob/main/LICENSE"
-compatibility: opencode
+compatibility: universal
 date_added: "2026-06-05"
 ---
 

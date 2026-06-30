@@ -132,6 +132,21 @@ After all tests pass, look for [refactor candidates](refactoring.md):
 ```
 
 
+## Multi-Agent TDD (optional)
+
+When splitting the cycle across agents, keep the roles strictly separated so no
+agent both writes the test and the code that satisfies it:
+
+| Agent | Role |
+|-------|------|
+| Agent A | Write the failing test (RED) — owns the specification |
+| Agent B | Implement the minimal code to pass (GREEN) — may not edit the test |
+| Agent C | Refactor once GREEN (REFACTOR) — may not change behavior |
+
+> The test is the specification. If you can't write a test, you don't understand
+> the requirement yet.
+
+
 ## Limitations
 
 - Requires the upstream tool, account, API key, or local setup when the workflow names one.

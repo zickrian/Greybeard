@@ -1,7 +1,7 @@
 ---
 name: full-output-enforcement
 description: "Use when a task requires exhaustive unabridged output, complete files, or strict prevention of placeholders and skipped code."
-category: frontend
+category: general
 risk: safe
 source: community
 source_repo: Leonxlnx/taste-skill

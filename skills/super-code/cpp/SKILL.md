@@ -102,13 +102,14 @@ auto it = std::ranges::find(vec, target); // C++20
 ```
 
 ```cpp
-// ❌ Checking .find() != .end() then accessing
+// ❌ Double lookup: contains() then operator[] hashes the key twice,
+//    and operator[] default-inserts on a non-const map.
+if (map.contains(key)) { use(map[key]); }
+
+// ✅ Single lookup via the iterator — no rehash, no accidental insert
 auto it = map.find(key);
 if (it != map.end()) { use(it->second); }
-
-// ✅ (C++20)
-if (map.contains(key)) { use(map[key]); }
-// or keep iterator version when you need the value without double lookup
+// `contains(key)` alone is fine for a pure presence check (no value access).
 ```
 
 **Use `std::string_view` for function parameters that don't need ownership.**

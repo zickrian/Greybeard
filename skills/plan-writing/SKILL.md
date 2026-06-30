@@ -1,7 +1,7 @@
 ---
 name: plan-writing
 description: "Structured task planning with clear breakdowns, dependencies, and verification criteria. Use when implementing features, refactoring, or any multi-step work."
-risk: unknown
+risk: safe
 source: community
 date_added: "2026-02-27"
 ---
@@ -83,17 +83,22 @@ This skill provides a framework for breaking down work into clear, actionable ta
 
 ---
 
-### Principle 4: Scripts Are Project-Specific
+### Principle 4: Verification Is Project-Specific
 
-> 🔴 **DO NOT copy-paste script commands. Choose based on project type.**
+> 🔴 **DO NOT invent verification commands. Use what the project actually provides.**
 
-| Project Type | Relevant Scripts |
-|--------------|------------------|
-| Frontend/React | `ux_audit.py`, `accessibility_checker.py` |
-| Backend/API | `api_validator.py`, `security_scan.py` |
-| Mobile | `mobile_audit.py` |
-| Database | `schema_validator.py` |
-| Full-stack | Mix of above based on what you touched |
+Each task's verification step must call a command that exists in *this* repo —
+check `package.json` scripts, `Makefile`, CI config, or the test runner first.
+
+| Project Type | Look for |
+|--------------|----------|
+| Frontend/React | `npm test`, `npm run lint`, `npm run build`, Lighthouse/axe if configured |
+| Backend/API | test suite, schema/contract checks, the project's security linter |
+| Mobile | the platform build + test command |
+| Database | migration check, schema validation in the project's toolchain |
+| Full-stack | mix of the above, scoped to what you touched |
+
+If no suitable command exists, state that explicitly and verify manually.
 
 **Wrong:** Adding all scripts to every plan
 **Right:** Only scripts relevant to THIS task

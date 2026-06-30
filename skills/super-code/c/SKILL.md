@@ -148,10 +148,12 @@ fail:
 // ❌ strcpy without bounds checking
 strcpy(dest, src);
 
-// ✅
-strncpy(dest, src, sizeof(dest) - 1);
-dest[sizeof(dest) - 1] = '\0';
-// or better: snprintf(dest, sizeof(dest), "%s", src);
+// ✅ snprintf always null-terminates and truncates safely
+snprintf(dest, sizeof(dest), "%s", src);
+
+// strncpy is a trap: it does NOT null-terminate on overflow and
+// zero-pads short strings. If you must use it, terminate manually:
+// strncpy(dest, src, sizeof(dest) - 1); dest[sizeof(dest) - 1] = '\0';
 ```
 
 ```c

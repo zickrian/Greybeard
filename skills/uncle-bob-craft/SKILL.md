@@ -1,6 +1,6 @@
 ---
 name: uncle-bob-craft
-description: "Use when performing code review, writing or refactoring code, or discussing architecture; complements clean-code and does not replace project linter/formatter."
+description: "Use for principle-based code review and architecture critique: Clean Architecture dependency rule, SOLID in context, code smells (rigidity/fragility/etc.), and design-pattern misuse. Complements super-code; does not replace the project linter/formatter."
 category: code-quality
 risk: safe
 source: community
@@ -12,11 +12,11 @@ tools: [claude, cursor, gemini]
 
 # Uncle Bob Craft
 
-Apply Robert C. Martin (Uncle Bob) criteria for **code review and production**: Clean Code, Clean Architecture, The Clean Coder, Clean Agile, and design-pattern discipline. This skill is **complementary** to the existing `@clean-code` skill (which focuses on the Clean Code book) and to your project's linter/formatter—it does not replace them.
+Apply Robert C. Martin (Uncle Bob) criteria for **code review and production**: Clean Code, Clean Architecture, The Clean Coder, Clean Agile, and design-pattern discipline. This skill is **complementary** to the existing `@super-code` skill (which focuses on the Clean Code book) and to your project's linter/formatter—it does not replace them.
 
 ## Overview
 
-This skill aggregates principles from Uncle Bob's body of work for **reviewing** and **writing** code: naming and functions (via `@clean-code`), architecture and boundaries (Clean Architecture), professionalism and estimation (The Clean Coder), agile values and practices (Clean Agile), and design-pattern use vs misuse. Use it to evaluate structure, dependencies, SOLID in context, code smells, and professional practices. It provides craft and design criteria only—not syntax or style enforcement, which remain the responsibility of your linter and formatter.
+This skill aggregates principles from Uncle Bob's body of work for **reviewing** and **writing** code: naming and functions (via `@super-code`), architecture and boundaries (Clean Architecture), professionalism and estimation (The Clean Coder), agile values and practices (Clean Agile), and design-pattern use vs misuse. Use it to evaluate structure, dependencies, SOLID in context, code smells, and professional practices. It provides craft and design criteria only—not syntax or style enforcement, which remain the responsibility of your linter and formatter.
 
 ## When to Use This Skill
 
@@ -32,7 +32,7 @@ This skill aggregates principles from Uncle Bob's body of work for **reviewing**
 
 | Source | Focus | Where to go |
 |--------|--------|-------------|
-| **Clean Code** | Names, functions, comments, formatting, tests, classes, smells | Use `@clean-code` for detail; this skill references it for review/production. |
+| **Clean Code** | Names, functions, comments, formatting, tests, classes, smells | Use `@super-code` for detail; this skill references it for review/production. |
 | **Clean Architecture** | Dependency Rule, layers, boundaries, SOLID in architecture | See [reference.md](./reference.md) and [references/clean-architecture.md](./references/clean-architecture.md). |
 | **The Clean Coder** | Professionalism, estimation, saying no, sustainable pace | See [reference.md](./reference.md) and [references/clean-coder.md](./references/clean-coder.md). |
 | **Clean Agile** | Values, Iron Cross, TDD, refactoring, pair programming | See [reference.md](./reference.md) and [references/clean-agile.md](./references/clean-agile.md). |
@@ -79,7 +79,7 @@ Full lists (including heuristics C1–T9-style) are in [reference.md](./referenc
 
 ### When writing or refactoring code
 
-1. Prefer **small, single-purpose** functions and classes; use `@clean-code` for naming and structure.
+1. Prefer **small, single-purpose** functions and classes; use `@super-code` for naming and structure.
 2. Keep **dependencies pointing inward**; put business rules in the center, adapters at the edges.
 3. Introduce **design patterns** only when duplication or variation justifies them.
 4. Refactor in **small steps** with tests staying green.
@@ -129,7 +129,7 @@ def process(order: dict) -> dict:
 
 ## Best Practices
 
-- ✅ Use `@clean-code` for naming, functions, comments, and formatting; use this skill for architecture, boundaries, SOLID, smells, and process.
+- ✅ Use `@super-code` for naming, functions, comments, and formatting; use this skill for architecture, boundaries, SOLID, smells, and process.
 - ✅ In review, name the smell or principle (e.g., "Dependency Rule violation: use case imports from the web framework").
 - ✅ Suggest at least one concrete refactor per review (extract, rename, invert dependency).
 - ✅ Run the project linter and formatter separately; this skill does not replace them.
@@ -149,11 +149,10 @@ def process(order: dict) -> dict:
 
 ## Related Skills
 
-- **`@clean-code`** — Detailed Clean Code book material (names, functions, comments, formatting, tests, classes, smells). Use for day-to-day code quality; use uncle-bob-craft for architecture and cross-book criteria.
+- **`@super-code`** — Idiomatic, dense, language-level code quality (names, functions, dead-code removal). Use for day-to-day code quality; use uncle-bob-craft for architecture and cross-book criteria.
 - **`@architecture`** — General architecture decisions and trade-offs. Use when choosing high-level structure; use uncle-bob-craft for Dependency Rule and boundaries.
-- **`@code-review-excellence`** — Code review practices. Combine with uncle-bob-craft for principle-based review.
-- **`@refactor-clean-code`** — Refactoring toward clean code. Use with uncle-bob-craft when refactoring for boundaries and SOLID.
-- **`@test-driven-development`** — TDD workflow. Aligns with Clean Agile and Clean Coder (tests as requirement, sustainable pace).
+- **`@code-refactoring-refactor-clean`** — Refactoring toward clean code. Use with uncle-bob-craft when refactoring for boundaries and SOLID.
+- **`@tdd`** — TDD workflow. Aligns with Clean Agile and Clean Coder (tests as requirement, sustainable pace).
 
 ## Limitations
 

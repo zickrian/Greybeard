@@ -163,11 +163,13 @@ type Storage interface { Getter; Setter }
 ```
 
 ```go
-// ❌ Returning concrete struct from constructor (ties callers to implementation)
-func NewStore() *RedisStore { ... }
+// ✅ Accept interfaces, return structs (idiomatic Go).
+//    Returning the concrete type lets callers use all its methods and
+//    keeps the constructor honest about what it builds.
+func NewStore() *RedisStore { return &RedisStore{...} }
 
-// ✅ — return interface when you have or anticipate multiple implementations
-func NewStore() Storage { return &RedisStore{...} }
+// Let the CONSUMER define the narrow interface it needs:
+func Handler(s Storage) { ... } // Storage declared where it's used
 ```
 
 ```go

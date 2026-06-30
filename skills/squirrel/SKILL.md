@@ -1,6 +1,6 @@
 ---
 name: squirrel
-description: "Full-cycle AI coding skill: plans, builds, tests, lints, fixes bugs, and writes production-grade docs. Auto-detects project state and adapts its 8-phase pipeline."
+description: "Use for greenfield or whole-feature work needing the full cycle (plan → build → test → lint → fix → document) when no single more-specific skill fits. Auto-detects project state and adapts its 8-phase pipeline. For one isolated phase, use the specific skill instead."
 category: development
 risk: safe
 source: community
@@ -93,18 +93,6 @@ Squirrel audits the existing codebase, then applies phases 4-8.
 - Never deletes failing tests to "pass"
 - Never leaves code in a broken state
 
-## Platform Compatibility
-
-Squirrel works on: Claude Code, Codex, Cursor, Antigravity, Gemini CLI, GitHub Copilot, Windsurf, OpenCode, Aider (9 total).
-
-Install with:
-
-```bash
-# Universal installer
-npx skills add flyingsquirrel0419/squirrel-skill
-
-```
-
 ## Limitations
 
 - Does not replace environment-specific validation or expert review
@@ -114,5 +102,5 @@ npx skills add flyingsquirrel0419/squirrel-skill
 ## Related Skills
 
 - `@brainstorming` - For planning before implementation
-- `@test-driven-development` - For TDD-oriented workflows
-- `@systematic-debugging` - For methodical problem-solving
+- `@tdd` - For TDD-oriented workflows
+- `@phase-gated-debugging` - For methodical problem-solving

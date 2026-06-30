@@ -1,6 +1,6 @@
 ---
 name: the-honoured-one
-description: "Forces the AI to fully load context and read relevant files before performing complex, multi-file tasks, architectural changes, or debugging. Prevents acting on assumptions."
+description: "Use before any complex, multi-file, or architectural task and before debugging unfamiliar code: fully load context and read every relevant file first. Prevents acting on assumptions about code you haven't read."
 risk: safe
 source: community
 date_added: "2026-06-25"

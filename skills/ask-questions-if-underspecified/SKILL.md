@@ -1,7 +1,7 @@
 ---
 name: ask-questions-if-underspecified
-description: Clarify requirements before implementing. Use when serious doubts arise.
-risk: unknown
+description: "Use when a request is vague, ambiguous, or missing key details (no clear scope, success criteria, target files, tech choice, or expected behavior) BEFORE implementing. Ask 1-5 targeted questions instead of guessing."
+risk: safe
 source: community
 ---
 

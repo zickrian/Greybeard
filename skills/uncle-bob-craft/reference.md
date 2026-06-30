@@ -138,7 +138,7 @@ For grouping classes into components: **REP** (reuse/release equivalence), **CCP
 
 ## Scope and attribution
 
-- **Clean Code** — Full heuristics and chapter-by-chapter detail: use the `@clean-code` skill. This skill references Clean Code for review context and defers naming/functions/formatting there.
+- **Clean Code** — Full heuristics and chapter-by-chapter detail: use the `@super-code` skill. This skill references Clean Code for review context and defers naming/functions/formatting there.
 - **Clean Architecture** — We cover the Dependency Rule, layers, boundaries, SOLID in architecture, and component cohesion/coupling (REP, CCP, CRP, ADP, SDP, SAP) in summary; the book has full treatment and more nuance.
 - **The Clean Coder** — We summarize professionalism, estimation, sustainable pace, tests, and mentoring; the book has full chapters and stories.
 - **Clean Agile** — We summarize values, Iron Cross, and key practices (TDD, refactoring, pairing, simple design); the book ties them to agile history and adoption.

@@ -1,6 +1,6 @@
 # Uncle Bob Craft
 
-Skill for applying Robert C. Martin (Uncle Bob) criteria to **code review and production**: Clean Code (with `@clean-code`), Clean Architecture, The Clean Coder, Clean Agile, code smells and heuristics, and design-pattern discipline.
+Skill for applying Robert C. Martin (Uncle Bob) criteria to **code review and production**: Clean Code (with `@super-code`), Clean Architecture, The Clean Coder, Clean Agile, code smells and heuristics, and design-pattern discipline.
 
 ## Contents
 
@@ -9,4 +9,4 @@ Skill for applying Robert C. Martin (Uncle Bob) criteria to **code review and pr
 - **[references/](./references/)** — Deep references: [clean-architecture.md](./references/clean-architecture.md), [clean-coder.md](./references/clean-coder.md), [clean-agile.md](./references/clean-agile.md), [design-patterns.md](./references/design-patterns.md).
 - **[examples/code-review-checklist.md](./examples/code-review-checklist.md)** — Copy-paste checklist for principle-based code review.
 
-Use with `@uncle-bob-craft`. Complements `@clean-code`; does not replace the project linter or formatter.
+Use with `@uncle-bob-craft`. Complements `@super-code`; does not replace the project linter or formatter.

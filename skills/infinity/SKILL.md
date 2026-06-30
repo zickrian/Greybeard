@@ -1,6 +1,6 @@
 ---
 name: infinity
-description: "Enforces a strict input boundary protocol (detect, classify, filter, verify) to ensure untrusted data never reaches business logic raw."
+description: "Use when handling external/untrusted input — API request bodies, query params, form data, file uploads, webhooks, env vars, or third-party responses. Enforces detect → classify trust → filter/validate → verify before the data reaches business logic, storage, or rendering."
 risk: safe
 source: community
 date_added: "2026-06-23"
